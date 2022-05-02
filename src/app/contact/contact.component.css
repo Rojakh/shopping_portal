@@ -1,0 +1,23 @@
+footer 
+{
+    background-color: black;
+    height: 450px;
+}
+footer .col-md-3 {
+    color: whitesmoke;
+    padding-top: 100px;
+}
+
+/* setting text color for the contents inside the footer */
+
+footer .col-md-4 {
+    color: whitesmoke;
+    padding-top: 100px;
+}
+
+/* setting text color for the contents inside the footer */
+
+footer .col-md-2 {
+    color: whitesmoke;
+    padding-top: 100px;
+}
