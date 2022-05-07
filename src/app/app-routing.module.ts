@@ -6,7 +6,10 @@ import { FashionsComponent } from './fashions/fashions.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { ProductsComponent } from './products/products.component';
+import { SignupComponent } from './signup/signup.component';
+
+
 
 const routes: Routes = [
   {path : '', component : HomeComponent},
@@ -15,9 +18,9 @@ const routes: Routes = [
   {path : 'footer', component : FooterComponent},
   {path : 'fashions', component : FashionsComponent},
   {path : 'about', component : AboutComponent},
-  {path : 'register', component : RegisterComponent},
-  {path : 'login' , component : LoginComponent}
-  
+  {path : 'login' , component : LoginComponent},
+  {path:'products',component : ProductsComponent},
+  {path : 'signup', component : SignupComponent}
 ];
 
 @NgModule({
