@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +20,10 @@ import { ProductsubComponent } from './products/productsub/productsub.component'
 import { CounterComponent } from './products/counter/counter.component';
 import { CounterchildComponent } from './products/counter/counterchild/counterchild.component';
 import { SignupComponent } from './signup/signup.component';
+import { LadiesComponent } from './ladies/ladies.component';
+import { MensComponent } from './mens/mens.component';
+import { KidsComponent } from './kids/kids.component';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 
 
@@ -36,11 +42,17 @@ import { SignupComponent } from './signup/signup.component';
     ProductsubComponent,
     CounterComponent,
     CounterchildComponent,
-    SignupComponent
+    SignupComponent,
+    LadiesComponent,
+    MensComponent,
+    KidsComponent,
+    UserRegistrationComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule
   ],

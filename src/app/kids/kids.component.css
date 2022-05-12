@@ -1,0 +1,16 @@
+.col-md-4:hover {
+    transform: scale(1.1);
+  }
+  
+  .col-md-4{
+    transition: transform 0.2s ease;
+  }
+  
+  .sec5
+  {
+    padding-left: 100px;
+  }
+  .sec6
+  {
+    padding-left: 100px;
+  }

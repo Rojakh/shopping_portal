@@ -1,0 +1,23 @@
+.col-md-4:hover {
+    transform: scale(1.1);
+  }
+  
+  .col-md-4{
+    transition: transform 0.2s ease;
+  }
+
+  .col-md-3:hover {
+    transform: scale(1.1);
+  }
+  
+  .col-md-3{
+    transition: transform 0.2s ease;
+  }
+
+  .col-md-6:hover {
+    transform: scale(1.1);
+  }
+  
+  .col-md-6{
+    transition: transform 0.2s ease;
+  }
