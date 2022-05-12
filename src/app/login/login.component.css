@@ -6,3 +6,38 @@ h2{
 .card-title{
     text-align: center;
 }
+
+.loginimg1
+{
+    position: relative;
+    right: 0vmin;
+}
+
+.ir
+{
+    position: relative;
+    right: 100px;
+    width: 300px;
+    left: 30px;
+    bottom: 330px;
+}
+.it
+{
+    position: relative;
+    right: 100px;
+    text-decoration: none;
+    bottom: 320px;
+    left: 0px;
+}
+
+.fullcard1
+{
+    position: relative;
+    left: 300px;
+    background-color: rgb(198, 239, 252);
+    height: 500px;
+    width: 400px;
+    left: 800px;
+    right:300px
+   
+}

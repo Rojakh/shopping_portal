@@ -1,26 +1,17 @@
 <br><br><br>
-<div
-  class="container"
-  style="
-    align-items: center;
-    width: 400px;
-    border: 1px solid black;
-    padding: 40px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    color: rgb(12, 11, 11);
-    background: #2980B9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  "
->
+<div class="col-md-6 loginimg1">
+  <div>
+      <img src="assets/reg2.jpg" style="height:450px;width:550px;padding-top: 100px;" class="img-fluid border-radius p-4" alt="">
+    </div> 
+</div>
+<div class="fullcard1">
   <div class="card-body">
-    <h2 class="card-title">Login</h2>
+    <h2 class="card-title it">Login</h2>
     <br />
+    <div class="col-md-6">
     <form [formGroup]="myForm" novalidate>
-      <div class="form-group">
+      <div class="form-group ir">
         <label>User Name</label>
         <input
           type="text"
@@ -50,7 +41,7 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
           </strong>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group ir">
         <label>Password</label>
         <input
           type="password"
@@ -77,11 +68,12 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
         </div>
       </div>
       <br /><br />
-      <button type="submit" class="btn btn-primary">
+      <button type="submit" class="btn btn-primary ir">
         <a routerLink="/home" style="color: white"
           ><span>Login</span></a
         >
       </button>
     </form>
   </div>
+</div>
 </div>
