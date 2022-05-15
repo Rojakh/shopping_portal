@@ -1,0 +1,23 @@
+<br><br><br>
+<div class="list row">
+    <div class="col-md-6">
+      <h2><strong>Customers List</strong></h2>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let customer of customers; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveCustomer(customer, i)"
+        >
+          {{ customer.title }}
+        </li>
+      </ul>
+     
+    </div>
+    <div class="col-md-6">
+      <app-customer-reviews
+        [viewMode]="true"
+        [currentCustomer]="currentCustomer"
+      ></app-customer-reviews>
+    </div>
+  </div>

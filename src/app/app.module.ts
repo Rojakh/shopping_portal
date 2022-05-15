@@ -24,6 +24,9 @@ import { LadiesComponent } from './ladies/ladies.component';
 import { MensComponent } from './mens/mens.component';
 import { KidsComponent } from './kids/kids.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { AddCustomerComponent } from './components/add-customer/add-customer.component';
+import { CustomerReviewsComponent } from './components/customer-reviews/customer-reviews.component';
+import { CustomersListComponent } from './components/customers-list/customers-list.component';
 
 
 
@@ -47,6 +50,9 @@ import { UserRegistrationComponent } from './user-registration/user-registration
     MensComponent,
     KidsComponent,
     UserRegistrationComponent,
+    AddCustomerComponent,
+    CustomerReviewsComponent,
+    CustomersListComponent,
     
   ],
   imports: [

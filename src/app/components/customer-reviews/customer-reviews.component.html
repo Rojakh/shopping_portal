@@ -1,0 +1,73 @@
+<br><br><br><br><br><br>
+
+<div *ngIf="viewMode; else editable">
+    <div *ngIf="currentCustomer.id">
+      <h2><strong>Customer Details</strong></h2><br>
+      <div>
+        <label style="font-size:20px;"><strong>Name:</strong></label> {{ currentCustomer.title }}
+      </div>
+      <div>
+        <label style="font-size:20px;"><strong>Review:</strong></label>
+        {{ currentCustomer.description }}
+      </div>
+      <br>
+      <a
+        class="badge badge-warning" id="edit"
+        routerLink="/customers/{{ currentCustomer.id }}" style="font-size:20px;background-color:deeppink;"
+      >
+        Edit
+      </a>
+    </div>
+    <br><br>
+    <div *ngIf="!currentCustomer">
+      <br />
+      <p>Please click on a Customer...</p>
+    </div>
+  </div>
+  <ng-template #editable>
+    <div *ngIf="currentCustomer.id" class="edit-form">
+      <h2 style="text-align:center"><strong>Customer</strong></h2><br>
+      <form style="padding-left:50px;padding-right:50px;">
+        <div class="form-group">
+          <label for="title" style="font-size:20px"><strong>Name</strong></label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            [(ngModel)]="currentCustomer.title"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description"style="font-size:20px">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            [(ngModel)]="currentCustomer.description"
+            name="description"
+          />
+        </div>
+        
+      </form>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="badge badge-danger mr-2" (click)="deleteCustomer()"style="font-size:20px;background-color:deeppink;">
+        Delete
+      </button>&nbsp;&nbsp;&nbsp;&nbsp;
+      <button 
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updateCustomer()" style="font-size:20px;background-color:deeppink;"
+      >
+        Update
+      </button>
+      <br><br>
+      <p>{{ message }}</p>
+    </div>
+    <div *ngIf="!currentCustomer.id">
+      <br />
+      <p>Cannot access this Customer...</p>
+    </div>
+  </ng-template>

@@ -11,7 +11,9 @@ import { MensComponent } from './mens/mens.component';
 import { ProductsComponent } from './products/products.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
-
+import { CustomersListComponent } from './components/customers-list/customers-list.component';
+import { CustomerReviewsComponent } from './components/customer-reviews/customer-reviews.component';
+import { AddCustomerComponent } from './components/add-customer/add-customer.component';
 
 
 const routes: Routes = [
@@ -26,7 +28,11 @@ const routes: Routes = [
   {path : 'ladies', component : LadiesComponent},
   {path : 'mens', component : MensComponent},
   {path : 'kids' , component : KidsComponent},
-  {path : 'connect', component : UserRegistrationComponent}
+  {path : 'connect', component : UserRegistrationComponent},
+  { path: '', redirectTo: 'customers', pathMatch: 'full' },
+  { path: 'customers', component: CustomersListComponent },
+  { path: 'customers/:id', component: CustomerReviewsComponent },
+  { path: 'add', component: AddCustomerComponent }
 ];
 
 @NgModule({
