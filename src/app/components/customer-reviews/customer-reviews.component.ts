@@ -39,11 +39,13 @@ export class CustomerReviewsComponent implements OnInit {
   
   updateCustomer(): void {
     this.message = '';
+    alert("This Customer Was Updated Successfully");
     this.customerService.update(this.currentCustomer.id, this.currentCustomer)
       .subscribe({
         next: (res) => {
           console.log(res);
           this.message = res.message ? res.message : 'This customer was updated successfully!';
+          
         },
         error: (e) => console.error(e)
       });
@@ -53,6 +55,7 @@ export class CustomerReviewsComponent implements OnInit {
       .subscribe({
         next: (res) => {
           console.log(res);
+          alert("Are You Sure?");
           this.router.navigate(['/customers']);
         },
         error: (e) => console.error(e)

@@ -2,7 +2,7 @@
 
 <div *ngIf="viewMode; else editable">
     <div *ngIf="currentCustomer.id">
-      <h2><strong>Customer Details</strong></h2><br>
+      <h2><strong>Customer Reviews</strong></h2><br>
       <div>
         <label style="font-size:20px;"><strong>Name:</strong></label> {{ currentCustomer.title }}
       </div>
@@ -26,7 +26,7 @@
   </div>
   <ng-template #editable>
     <div *ngIf="currentCustomer.id" class="edit-form">
-      <h2 style="text-align:center"><strong>Customer</strong></h2><br>
+      <h2 style="text-align:center"><strong>Customer Reviews</strong></h2><br>
       <form style="padding-left:50px;padding-right:50px;">
         <div class="form-group">
           <label for="title" style="font-size:20px"><strong>Name</strong></label>
